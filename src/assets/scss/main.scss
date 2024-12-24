@@ -1,0 +1,49 @@
+@use 'variables' as vars;
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Spotify Mix UI', sans-serif;
+  background: vars.color(base-bg);
+  color: vars.color(text-color);
+  font-size: vars.$text-base-size;
+
+  input {
+    font-size: vars.$text-base-size;
+  }
+
+  [class$='-icon'] {
+    fill: vars.color(text-color);
+    width: 24px;
+    height: 24px;
+  }
+}
+
+a,
+button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px;
+  font-weight: bold;
+  color: vars.color(light-grey);
+  cursor: pointer;
+}
+
+button {
+  appearance: none;
+  background: none;
+  border: none;
+}
+
+.primary-button {
+  background: vars.color(primary);
+  color: vars.color(dark);
+  padding-inline: 32px;
+  border-radius: 100px;
+  align-content: center;
+}

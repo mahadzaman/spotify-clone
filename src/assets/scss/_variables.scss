@@ -1,0 +1,17 @@
+@use 'sass:map';
+
+$colors: (
+  base-bg: #000,
+  lesser-dark: #121212,
+  text-color: #fff,
+  dark-grey: #1f1f1f,
+  light-grey: #b3b3b3,
+  primary: #ffffff,
+  dark: #000,
+);
+
+$text-base-size: 1rem;
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
